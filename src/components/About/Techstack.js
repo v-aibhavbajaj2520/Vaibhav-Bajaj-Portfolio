@@ -35,15 +35,15 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiGithub />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
-      </Col> */}
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiCss3 />
       </Col>
