@@ -4,10 +4,10 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Home2() {
   return (
@@ -48,7 +48,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js</b>
               </i>
             </p>
           </Col>
@@ -65,46 +65,46 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/v-aibhavbajaj2520"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/vaibhav-bajaj-2005vaibhav"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/vaibhav.bajaj._"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+            <li className="social-icons">
+              <a
+                href="https://github.com/v-aibhavbajaj2520"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://x.com/Vaibhav18206630?t=ZRk-fCpJ7H6g7qDHSCExyQ&s=09"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaXTwitter />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/vaibhav-bajaj-2005vaibhav"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.instagram.com/vaibhav.bajaj._"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram />
+              </a>
+            </li>
             </ul>
           </Col>
         </Row>
