@@ -3,18 +3,22 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiVercel,
-  SiWindows,
   SiInstagram,
 } from "react-icons/si";
+import { FaWindows,
+  FaInstagram 
+ } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
+import { IoLogoVercel } from "react-icons/io5";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
+      <FaWindows />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <TbBrandVscode />
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
@@ -23,10 +27,10 @@ function Toolstack() {
         <SiSlack />
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+      <IoLogoVercel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiInstagram />
+        <FaInstagram  />
       </Col>
     </Row>
   );
