@@ -20,7 +20,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Problem Solving
             </li>
             <li className="about-activity">
               <ImPointRight /> Scrolling Reels
