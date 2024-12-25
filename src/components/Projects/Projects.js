@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import mockup from "../../Assets/Projects/mockup-1.png"
+import hizeIeee from "../../Assets/Projects/hize-ieee-mockup.png";
+import amazonMockup from "../../Assets/Projects/amazon.png"
+import netflixMockup from "../../Assets/Projects/amazon.png"
 
 function Projects() {
   return (
@@ -30,7 +31,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={hizeIeee}
               isBlog={false}
               title="IEEE-HIZE"
               description="Developed a dynamic and responsive website for Hize X IEEE, showcasing event details, schedules, and registration features. Ensured a user-friendly interface with seamless navigation and optimized performance across devices."
@@ -40,11 +41,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={mockup}
+              imgPath={amazonMockup}
               isBlog={false}
               title="Amazon Clone"
               description="A responsive front-end clone of the Amazon website built with HTML and CSS. Features include a modern navigation bar, product grid layout, and a design optimized for mobile, tablet, and desktop screens."
+              ghLink="https://github.com/v-aibhavbajaj2520/Web-Dev/tree/main/CSS-%20Cascade%20Style%20Sheets/Projects/Amazon"
               demoLink="https://web-dev-two-mu.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={netflixMockup}
+              isBlog={false}
+              title="Netflix Clone"
+              description="A responsive replica of Netflix’s landing page featuring a hero section, movie carousel, and call-to-action buttons. Built with HTML, CSS, and JavaScript for a smooth, mobile-friendly user experience."
+              ghLink="https://github.com/v-aibhavbajaj2520/Web-Dev/tree/main/CSS-%20Cascade%20Style%20Sheets/Projects/Netflix"
+              demoLink="https://netflix-sepia-nine.vercel.app/"
             />
           </Col>
 
