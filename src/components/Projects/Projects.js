@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import mockup from "../../Assets/Projects/mockup-1.png"
 
 function Projects() {
   return (
@@ -39,7 +40,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={mockup}
               isBlog={false}
               title="Amazon Clone"
               description="A responsive front-end clone of the Amazon website built with HTML and CSS. Features include a modern navigation bar, product grid layout, and a design optimized for mobile, tablet, and desktop screens."
