@@ -62,7 +62,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple animate-rotate-360">connect </span>with me
             </p>
             <ul className="home-about-social-links">
             <li className="social-icons">
@@ -71,6 +71,7 @@ function Home2() {
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="animate-rotate-360 transition"
               >
                 <AiFillGithub />
               </a>
