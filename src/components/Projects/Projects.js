@@ -2,11 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import theYukt from "../../Assets/Projects/theYukt.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -37,8 +32,18 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="IEEE-HIZE"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              demoLink="https://www.ieeecshize.com/"
+              description="Developed a dynamic and responsive website for Hize X IEEE, showcasing event details, schedules, and registration features. Ensured a user-friendly interface with seamless navigation and optimized performance across devices."
+              demoLink="https://ieeecssyphiz.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Amazon Clone"
+              description="A responsive front-end clone of the Amazon website built with HTML and CSS. Features include a modern navigation bar, product grid layout, and a design optimized for mobile, tablet, and desktop screens."
+              demoLink="https://web-dev-two-mu.vercel.app/"
             />
           </Col>
 
