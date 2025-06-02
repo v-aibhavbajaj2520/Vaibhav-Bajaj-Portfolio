@@ -6,11 +6,15 @@ import {
   DiPython,
   DiJava,
   DiCss3,
-  DiGithub,
+  DiPhp,
+  DiMongodb,
+  DiWordpress,
 } from "react-icons/di";
 import {
   SiC,
   SiMysql,
+  SiFirebase,
+  SiReact
 } from "react-icons/si";
 
 
@@ -26,12 +30,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
@@ -39,7 +37,10 @@ function Techstack() {
         <DiCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGithub />
+        <DiPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiC />
@@ -47,10 +48,13 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
+        <DiWordpress />
+      </Col>
+       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/*<Col xs={4} md={2} className="tech-icons">
         <SiRedis />
       </Col> */}
       {/* <Col xs={4} md={2} className="tech-icons">

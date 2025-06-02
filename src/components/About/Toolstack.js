@@ -5,6 +5,9 @@ import { FaWindows,
  } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 import { IoLogoVercel } from "react-icons/io5";
+import {
+  DiGithub,
+} from "react-icons/di";
 
 function Toolstack() {
   return (
@@ -26,6 +29,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaInstagram  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGithub />
       </Col>
     </Row>
   );
