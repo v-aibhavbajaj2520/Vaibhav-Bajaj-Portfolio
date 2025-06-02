@@ -6,6 +6,7 @@ import hizeIeee from "../../Assets/Projects/hize-ieee-mockup.png";
 import amazonMockup from "../../Assets/Projects/amazon.png"
 import netflixMockup from "../../Assets/Projects/netflix-mockup.png"
 import gdgMockup from "../../Assets/Projects/GDG IILM mockup.png"
+import theYukt from "../../Assets/Projects/theYukt-mockup.png"
 
 function Projects() {
   return (
@@ -29,6 +30,17 @@ function Projects() {
               // demoLink="https://chatify-49.web.app/"
             />
           </Col> */}
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={theYukt}
+              isBlog={false}
+              title="theYukt"
+              description="theYukt is a project development platform that connects clients with expert teams for web, app, UI/UX, and software solutions, handling the entire process from ideation to delivery."
+              // ghLink="https://github.com/v-aibhavbajaj2520/Web-Dev/tree/main/CSS-%20Cascade%20Style%20Sheets/Projects/Netflix"
+              // demoLink="https://the-yukt.vercel.app/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
