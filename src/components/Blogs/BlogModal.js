@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 
 function BlogModal({ show, blog, onHide }) {
   const modalContentRef = useRef(null);
-  const backdropRef = useRef(null);
 
   useEffect(() => {
     if (show && modalContentRef.current) {

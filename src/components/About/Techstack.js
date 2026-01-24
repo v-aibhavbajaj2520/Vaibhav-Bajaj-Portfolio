@@ -14,7 +14,6 @@ import {
   SiC,
   SiMysql,
   SiFirebase,
-  SiReact
 } from "react-icons/si";
 import { useScrollStagger } from "../../hooks/useScrollAnimations";
 
