@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -7,8 +7,18 @@ import amazonMockup from "../../Assets/Projects/amazon.png"
 import netflixMockup from "../../Assets/Projects/netflix-mockup.png"
 import gdgMockup from "../../Assets/Projects/GDG IILM mockup.png"
 import theYukt from "../../Assets/Projects/theYukt-mockup.png"
+import { useScrollStagger } from "../../hooks/useScrollAnimations";
 
 function Projects() {
+  const rowRef = useRef(null);
+
+  useScrollStagger(rowRef, ".project-card", {
+    from: { opacity: 0, scale: 0.9, y: 50 },
+    to: { opacity: 1, scale: 1, y: 0 },
+    stagger: 0.2,
+    duration: 0.6
+  });
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -19,7 +29,7 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }} ref={rowRef}>
           {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={theYukt}
@@ -37,8 +47,8 @@ function Projects() {
               isBlog={false}
               title="theYukt"
               description="theYukt is a project development platform that connects clients with expert teams for web, app, UI/UX, and software solutions, handling the entire process from ideation to delivery."
-              // ghLink="https://github.com/v-aibhavbajaj2520/Web-Dev/tree/main/CSS-%20Cascade%20Style%20Sheets/Projects/Netflix"
-              // demoLink="https://the-yukt.vercel.app/"
+            // ghLink="https://github.com/v-aibhavbajaj2520/Web-Dev/tree/main/CSS-%20Cascade%20Style%20Sheets/Projects/Netflix"
+            // demoLink="https://the-yukt.vercel.app/"
             />
           </Col>
 

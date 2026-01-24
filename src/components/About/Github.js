@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import { useScrollAnimation } from "../../hooks/useScrollAnimations";
 
 function Github() {
+  const rowRef = useRef(null);
+
+  useScrollAnimation(rowRef, {
+    from: { opacity: 0, y: 50 },
+    to: { opacity: 1, y: 0 },
+    duration: 1,
+    start: "top 85%"
+  });
+
   return (
-    <Row style  ={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "10px" }} ref={rowRef}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
       </h1>

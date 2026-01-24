@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
@@ -16,11 +16,21 @@ import {
   SiFirebase,
   SiReact
 } from "react-icons/si";
+import { useScrollStagger } from "../../hooks/useScrollAnimations";
 
 
 function Techstack() {
+  const rowRef = useRef(null);
+
+  useScrollStagger(rowRef, ".tech-icons", {
+    from: { opacity: 0, scale: 0.5, y: 30 },
+    to: { opacity: 1, scale: 1, y: 0 },
+    stagger: 0.1,
+    duration: 0.5
+  });
+
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }} ref={rowRef}>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
@@ -51,7 +61,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiWordpress />
       </Col>
-       <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
       {/*<Col xs={4} md={2} className="tech-icons">
