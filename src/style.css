@@ -263,6 +263,15 @@ button:focus {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .home-section {
+    height: auto !important;
+    padding-bottom: 40px !important;
+    overflow: visible !important;
+    width: 120% !important;
+  }
+}
+
 .home-section::before {
   content: "";
   position: absolute;
